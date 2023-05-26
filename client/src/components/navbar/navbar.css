@@ -1,0 +1,31 @@
+.navbar-container {
+	background-color: #003680;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.navbar {
+	width: 100%;
+	max-width: 1024px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	color: #fff;
+}
+
+.navbar-login button {
+	color: #0071c2;
+	padding: 8px 8px;
+	font-weight: bold;
+	background-color: #fff;
+	outline: none;
+	cursor: pointer;
+}
+
+.navbar-login button:first-child {
+	margin-right: 12px;
+}

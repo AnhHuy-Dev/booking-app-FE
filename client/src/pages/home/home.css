@@ -1,0 +1,26 @@
+.home-container {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	margin: 50px auto;
+	z-index: 1;
+}
+
+.home-title {
+	width: 1024px;
+	margin: auto;
+	font-size: 22px;
+}
+.home-desc {
+	width: 1024px;
+	margin: auto;
+	font-size: 18px;
+	padding: 12px 0;
+}
+.mt-42 {
+	margin-top: 42px;
+}
+
+.mt-24 {
+	margin-top: 24px;
+}

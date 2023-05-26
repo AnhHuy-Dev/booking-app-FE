@@ -1,0 +1,101 @@
+.searchItem {
+	display: flex;
+	border: 1px solid #333;
+	border-radius: 5px;
+	padding: 8px;
+	justify-content: space-between;
+}
+.searchImg {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+.searchDesc {
+	display: flex;
+	flex-direction: column;
+	margin-left: -40px;
+	gap: 4px;
+}
+.searchTitle {
+	font-size: 22px;
+	color: #1e649f;
+}
+.searchDistance {
+	font-size: 14px;
+}
+.searchTaxiOp {
+	background-color: #047420;
+	color: #fff;
+	width: max-content;
+	padding: 3px;
+	border-radius: 5px;
+}
+
+.searchSubtitle {
+	font-weight: bold;
+}
+
+.searchFeatures {
+	font-size: 14px;
+}
+
+.searchCancelOp {
+	font-weight: bold;
+	color: #008009;
+}
+
+.searchCancelOpSubtitle {
+	font-size: 14px;
+	color: #008009;
+}
+
+.searchDetails {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* flex: 1; */
+}
+.searchExellent {
+	display: flex;
+	justify-content: space-between;
+}
+
+.searchExellent > span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.searchExellent > button {
+	font-size: 16px;
+	background-color: #003580;
+	border: none;
+	outline: none;
+	color: #fff;
+	padding: 6px 4px;
+}
+
+.searchDetailsText {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.searchDetailsText button {
+	background-color: #0071c2;
+	color: white;
+	font-weight: bold;
+	padding: 10px 24px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.searchPrice {
+	font-size: 26px;
+}
+
+.searchFee {
+	font-size: 14px;
+	color: gray;
+	margin-bottom: 6px;
+}

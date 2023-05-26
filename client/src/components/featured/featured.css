@@ -1,0 +1,33 @@
+.featured {
+	width: 100%;
+	max-width: 1024px;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	z-index: -1;
+	margin: 12px auto;
+}
+
+.featured-item > h2 {
+	font-size: 16px;
+	margin-top: 8px;
+}
+.featured-item > p {
+	font-size: 14px;
+	color: #8a8686;
+}
+.slick-slider {
+	width: 100%;
+}
+
+.slick-track {
+	display: flex;
+	flex: 1;
+	gap: 15px;
+}
+
+.featured-item img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
