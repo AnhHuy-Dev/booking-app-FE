@@ -17,6 +17,64 @@
 	color: #fff;
 }
 
+.navbar-login {
+	display: flex;
+	align-items: center;
+}
+
+.bell,
+.question {
+	color: #fff;
+	cursor: pointer;
+}
+
+.bell {
+	padding: 0 32px;
+}
+
+.username {
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	cursor: pointer;
+	padding: 4px;
+}
+.dropdown {
+	position: relative;
+}
+
+.list-login {
+	background-color: #fff;
+	position: absolute;
+	border-radius: 4px;
+	right: 0;
+	top: 36px;
+	list-style-type: none;
+	overflow: hidden;
+	z-index: 99;
+	padding: 4px 0;
+}
+
+.item-login {
+	width: 200px;
+	padding: 8px;
+	color: #262626;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.item-login:hover {
+	background-color: #eee;
+}
+
+.icon-login {
+	margin: 0 12px 0 4px;
+}
+
+.username:hover {
+	background-color: #1a498d;
+}
+
 .navbar-login button {
 	color: #0071c2;
 	padding: 8px 8px;

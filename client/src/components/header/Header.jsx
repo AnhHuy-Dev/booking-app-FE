@@ -3,14 +3,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBed, faCar, faEarthAmericas, faPlane, faTaxi } from "@fortawesome/free-solid-svg-icons";
 import { faUser, faCalendar } from "@fortawesome/free-regular-svg-icons";
 import { DateRange } from "react-date-range";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { format } from "date-fns";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { useNavigate } from "react-router-dom";
+import { SearchContext } from "../../contexts/SearchContextProvider";
+import { AuthContext } from "../../contexts/AuthContextProvider";
 
 function Header({ type }) {
 	const navigate = useNavigate();
+	const { authState } = useContext(AuthContext);
+	const { user } = authState;
+	const { dispatch, searchState } = useContext(SearchContext);
+	console.log(searchState);
 	const [destination, setDestination] = useState("");
 	const [openDate, setOpenDate] = useState(false);
 	const [date, setDate] = useState([
@@ -39,11 +45,21 @@ function Header({ type }) {
 
 	const handleSearch = () => {
 		if (destination === "") alert("Type your destination you want to go!");
-		else
+		else {
+			dispatch({
+				type: "NEW_SEARCH",
+				payload: {
+					destination,
+					dates: date,
+					options,
+				},
+			});
 			navigate("/hotels", {
 				state: { destination, date, options },
 			});
+		}
 	};
+
 	return (
 		<div className="header">
 			<div className="header-container">
@@ -71,7 +87,7 @@ function Header({ type }) {
 				</div>
 				{type !== "list" && (
 					<>
-						<h1 className="title">Find your next day</h1>
+						<h1 className="title">Where to next {user ? ", " + user.username : ""} ?</h1>
 						<p className="description">Search deals on hotels, homes, and much more...</p>
 						<div className="header-search">
 							<div className="hearder-search-item">

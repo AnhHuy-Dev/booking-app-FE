@@ -7,13 +7,13 @@
 }
 .searchImg {
 	width: 200px;
-	height: 200px;
+	/* height: 200px; */
 	object-fit: cover;
 }
 .searchDesc {
 	display: flex;
 	flex-direction: column;
-	margin-left: -40px;
+	margin-left: 12px;
 	gap: 4px;
 }
 .searchTitle {

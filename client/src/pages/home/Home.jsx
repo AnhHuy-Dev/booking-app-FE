@@ -1,11 +1,13 @@
 import Destination from "../../components/destination/Destination";
 import Email from "../../components/email/Email";
 import Featured from "../../components/featured/Featured";
-import FeaturedProperty from "../../components/featured/featuredProperty";
+import PropertyList from "../../components/featured/PropertyList";
 import Header from "../../components/header/Header";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import "./home.css";
+import FeaturedProperty from "../../components/featured/featuredProperty";
+import Login from "../auth/Login";
 
 function Home() {
 	return (
@@ -20,6 +22,8 @@ function Home() {
 				<p className="home-desc">These popular destination have a lot to offer</p>
 				<Featured />
 				<h1 className="home-title mt-42">Browse by property type</h1>
+				<PropertyList />
+				<h1 className="home-title mt-42">Home guests love</h1>
 				<FeaturedProperty />
 				<Email />
 				<Footer />
